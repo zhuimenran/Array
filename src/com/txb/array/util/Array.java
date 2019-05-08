@@ -1,6 +1,10 @@
 package com.txb.array.util;
 /**
- * 我的array类
+ * 我的array类，实现add 任意位置的添加
+ * find：任意元素所在的位置,
+ *  get：任意位置的元素,
+ *  set：任意位置元素的赋值,
+ *  remove：移出任意位置的元素
  * @author 13125
  *
  */
@@ -27,7 +31,7 @@ public class Array<E> {
 		size = 0;
 	}
 	
-	//实现动态数组
+	//实现动态数组，动态扩容
 	private void resize(int newcapacity) {
 		E[] newdata = (E[]) new Object[newcapacity];
 		for(int i = 0; i <size; i++) {
