@@ -28,6 +28,7 @@ public class UnionFind2 implements UF {
 
     //时间复杂度是O(h)  h 是树的高度
     //查找元素p所对应的集合编号
+    //找到p所对应的根节点
     private int find(int p) {
 //        if(p== parent[p]){
 //            return p;
